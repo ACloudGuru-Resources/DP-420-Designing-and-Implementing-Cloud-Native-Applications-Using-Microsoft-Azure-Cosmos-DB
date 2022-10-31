@@ -970,7 +970,6 @@
         "position": 8,
         "objectType": "planet",
         "hasMoons": true,
-        "meanSurfaceTempF": -201, 
         "labels": ["outer", "ice giant", "Galileo"],
         "tags": [{"SEO":"gaseous"},{ "SEO":"large planet"},{"SEO":"outer"}],
          "moons": [
