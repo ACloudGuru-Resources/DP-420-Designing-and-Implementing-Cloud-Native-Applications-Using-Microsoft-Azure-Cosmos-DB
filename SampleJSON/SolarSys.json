@@ -1,5 +1,6 @@
 [
       {
+        "itemId": 1000,
         "name": "The Sun",
         "radius": 695508000,
         "objectType": "star",
@@ -14,6 +15,7 @@
         }
       },  
       {
+        "itemId": 100,            
         "name": "Mercury",
         "physicalMetrics": 
             {
@@ -29,6 +31,7 @@
         "tags": [{"SEO":"non-gaseous"},{ "SEO":"small planet"},{"SEO":"inner"}]
       },
       {
+        "itemId": 200,            
         "name": "Venus",
         "physicalMetrics":{
             "distanceFromSun": 108200000000,
@@ -42,6 +45,7 @@
         "tags": [{"SEO":"non-gaseous"},{ "SEO":"medium planet"},{"SEO":"inner"}]
       },
       {
+        "itemId": 300,            
         "name": "Earth",
         "physicalMetrics": 
             {
@@ -90,6 +94,7 @@
         ]
       },
       {
+        "itemId": 400,            
         "name": "Mars",
         "physicalMetrics":
         {
@@ -116,6 +121,7 @@
         ]
       },
       {
+        "itemId": 99,            
         "name": "Pluto",
         "physicalMetrics":{
         "distanceFromSun": 6000000000000,
@@ -128,6 +134,7 @@
         "labels": ["demotion controversy", "Kuiper Belt"]
       },
       {
+        "itemId": 500,            
         "name": "Jupiter",
         "physicalMetrics":{
         "distanceFromSun": 778300000000,
@@ -487,7 +494,7 @@
           }
         ]
       },
-      {
+        "itemId": 600,            
         "name": "Saturn",
         "distanceFromSun": 1427000000000,
         "radius": 58232000,
@@ -811,6 +818,7 @@
         ]
       },
       {
+        "itemId": 700,            
         "name": "Uranus",
         "physicalMetrics": {
         "distanceFromSun": 2871000000000,
@@ -961,6 +969,7 @@
         ]
       },
       {
+        "itemId": 800,            
         "name": "Neptune",
         "physicalMetrics": {
         "distanceFromSun": 4497100000000,
