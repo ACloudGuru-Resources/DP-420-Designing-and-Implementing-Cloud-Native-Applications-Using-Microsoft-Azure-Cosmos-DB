@@ -1054,5 +1054,11 @@
             "distanceFromPlanet": 105283000
           }
         ]
-      }
+      },
+    {
+        "itemId": 300,            
+        "name": "Sputnik",
+        "objectType": "satellite"
+    }
+     
     ]
