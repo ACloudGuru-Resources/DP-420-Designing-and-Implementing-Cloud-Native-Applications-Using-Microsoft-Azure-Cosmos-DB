@@ -29,9 +29,9 @@ class Program
  
         public class GenericItem
         {
-            public string? {get; set;}
+            public string? id {get; set;}
             public string? itemName {get; set;}
             public int itemId {get; set;} 
-        }  
+        } 
     }   
 }
