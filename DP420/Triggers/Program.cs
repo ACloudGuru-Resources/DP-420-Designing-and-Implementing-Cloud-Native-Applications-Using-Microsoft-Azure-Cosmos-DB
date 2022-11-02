@@ -20,18 +20,18 @@ class Program
                 PreTriggers = new List<string> { "addOpsCounter" },
                 PostTriggers = new List<string> { "incrementOpsCounter" }
             };
-
-        GenericItem myItem = new()
-            {itemName = "myLabSample", itemId = 10, id=Guid.NewGuid()};
+        
+            GenericItem myItem = new()
+            {itemName = "myLabSample", itemId = 10, id=(Guid.NewGuid()).ToString()};
 
             GenericItem createdItem = await myContainer.CreateItemAsync<GenericItem>(myItem, requestOptions: rOptions);
         }
  
         public class GenericItem
         {
-            public Guid id {get; set;}
+            public string? {get; set;}
             public string? itemName {get; set;}
             public int itemId {get; set;} 
-        } 
+        }  
     }   
 }
