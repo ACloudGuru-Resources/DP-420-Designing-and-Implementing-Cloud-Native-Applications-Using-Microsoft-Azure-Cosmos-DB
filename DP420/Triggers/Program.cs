@@ -17,7 +17,7 @@ class Program
 
             ItemRequestOptions rOptions = new ItemRequestOptions()
             { 
-                PreTriggers = new List<string> { "addOpsCounter" }
+                PreTriggers = new List<string> { "addOpsCounter" },
                 PostTriggers = new List<string> { "incrementOpsCounter" }
             };
 
