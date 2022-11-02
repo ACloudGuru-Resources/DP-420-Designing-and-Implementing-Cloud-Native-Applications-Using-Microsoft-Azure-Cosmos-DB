@@ -14,7 +14,7 @@ class Program
             CosmosClient myClient = new (connString);
             Database myDatabase = myClient.GetDatabase("LabDB");
             Container myContainer = myDatabase.GetContainer("LabContainer");
-
+        
             ItemRequestOptions rOptions = new ItemRequestOptions()
             { 
                 PreTriggers = new List<string> { "addOpsCounter" },
@@ -22,7 +22,7 @@ class Program
             };
 
         GenericItem myItem = new()
-            {itemName = "labSample", itemId = 10, id=Guid.NewGuid()};
+            {itemName = "myLabSample", itemId = 10, id=Guid.NewGuid()};
 
             GenericItem createdItem = await myContainer.CreateItemAsync<GenericItem>(myItem, requestOptions: rOptions);
         }
