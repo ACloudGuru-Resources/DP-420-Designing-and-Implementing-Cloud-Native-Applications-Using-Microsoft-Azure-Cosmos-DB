@@ -5,9 +5,9 @@ using Microsoft.Azure.Cosmos.Fluent;
 namespace ConflictResolution
 {
 
-class Program
+class ProgramToo
     {
-    static async Task Main(string[] args)
+    static async Task MainToo(string[] args)
         {   
             string myConnectionString = "[ConnectionString]";
 
