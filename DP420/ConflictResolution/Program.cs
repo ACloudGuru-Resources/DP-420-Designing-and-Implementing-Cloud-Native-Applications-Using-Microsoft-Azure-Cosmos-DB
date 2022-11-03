@@ -9,7 +9,7 @@ class Program
     {
     static async Task Main(string[] args)
         {   
-            //Copy the primary connection string from the Cosmos DB account in the portal and
+            //Copy the primary connection string from the Cosmos DB account in the portal and paste it in place of the placeholder, below
             string myConnectionString = "[ConnectionString]";
 
             //Declare a CosmosClient using the connection string
