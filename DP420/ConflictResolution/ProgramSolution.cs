@@ -28,7 +28,7 @@ class ProgramToo
             containerProps.ConflictResolutionPolicy.ResolutionPath = "/myAltTimeStamp";
 
             //Create the new container, taking containerProps as a single parameter
-            Container container = await myDatabase.CreateContainerIfNotExistsAsync(containerProps);
+            ContainerResponse response = await myDatabase.CreateContainerIfNotExistsAsync(containerProps);
 
 //A less verbose and, arguably, more elegant way to accomplish the same thing:
 
