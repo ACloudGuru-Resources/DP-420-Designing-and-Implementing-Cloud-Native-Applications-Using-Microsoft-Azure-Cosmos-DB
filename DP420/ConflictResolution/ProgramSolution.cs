@@ -32,7 +32,7 @@ class ProgramToo
 
 //A less verbose and, arguably, more elegant way to accomplish the same thing:
 
-        // Container container = await aClient.GetDatabase("LabDB")
+        // ContainerResponse response = await aClient.GetDatabase("LabDB")
         //     .CreateContainerIfNotExistsAsync(new ContainerProperties("LabItems", "/labPK")
         //      {
         //         ConflictResolutionPolicy = new ConflictResolutionPolicy()
