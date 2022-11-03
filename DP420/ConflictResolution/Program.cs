@@ -13,22 +13,19 @@ class Program
             string myConnectionString = "[ConnectionString]";
 
             //Declare a CosmosClient, called myClient, using the connection string
-            CosmosClient myClient = new (myConnectionString);
 
-//A slightly more verbose approach but that is somewhat easier to build in a step-wise manner
 
             //Declare a Database, called myDatabase, from the Cosmos DB account called "LabDB";
-            Database myDatabase = myClient.GetDatabase("LabDB");
+
 
             //Declare a ContainerProperties object, called containerProps, with the minimum properties:
             //  "LabItems" for the container name and "/labPK" for the partition key path;
-            ContainerProperties containerProps = new ContainerProperties("LabItems","/labPK");
 
-            //Assign a ConflictResolutionPolicy to containerProps with the two properties appropriate to the lab scenario;
-            containerProps.ConflictResolutionPolicy.Mode = ConflictResolutionMode.LastWriterWins;
-            containerProps.ConflictResolutionPolicy.ResolutionPath = "/myAltTimeStamp";
 
-            //Create the new container, taking containerProps as a single parameter
+            //Assign a ConflictResolutionPolicy to containerProps with the two policy properties appropriate to the lab scenario;
+
+
+            //Create the new container on myDatabase (LabDB), taking containerProps as a single parameter
             ContainerResponse response = await myDatabase.CreateContainerIfNotExistsAsync(containerProps);
 
 
