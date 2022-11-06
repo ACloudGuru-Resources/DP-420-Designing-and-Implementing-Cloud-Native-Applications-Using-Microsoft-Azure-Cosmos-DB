@@ -15,7 +15,7 @@ class Program
             //Declare a CosmosClient, called myClient, using the connection string
             CosmosClient myClient = new (myConnectionString);
 
-//A slightly more verbose approach but that is somewhat easier to build in a step-wise manner
+////A slightly more verbose approach but that is somewhat easier to build in a step-wise manner
 
             //Declare a Database, called myDatabase, from the Cosmos DB account called "LabDB";
             Database myDatabase = myClient.GetDatabase("LabDB");
@@ -31,6 +31,7 @@ class Program
             //Create the new container, taking containerProps as a single parameter
             ContainerResponse response = await myDatabase.CreateContainerIfNotExistsAsync(containerProps);
 
+////A less verbose and, arguably, more elegant alterative
         // ContainerResponse response = await aClient.GetDatabase("LabDB")
         //     .CreateContainerIfNotExistsAsync(new ContainerProperties("LabItems", "/labPK")
         //      {
